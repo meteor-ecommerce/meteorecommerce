@@ -1,3 +1,24 @@
-
-This is the readme file for this branch.
 # meteor-ecommerce
+
+##Startup Guide
+1. Install Meteor
+2. Run meteor in the app directory
+3. On starting, the admin email and password will be displayed in the console. Use this to gain admin access to the site
+
+
+
+##Features
+1. Product listing page with sorting and silter options
+2. Categories for Products
+3. Admin Panel to add,edit product and categories and see the orders
+4. Inbuilt integration for [Instamojo](https://imjo.in/NvQhd) Payment Gateway along with Cash on Delivery
+
+##Setting up [Instamojo](https://imjo.in/NvQhd) Payment Gateway
+1. Open file server/methods.js
+2. Replace 'API_KEY' and 'AUTH_TOKEN' with the code you get from [Instamojo](https://imjo.in/NvQhd) 
+3. Also replace the links 'https://test.instamojo.com/api/1.1/payment-requests/' with 'https://www.instamojo.com/api/1.1/payment-requests/'
+
+
+
+
+Follow the flight path on [Trello](https://trello.com/b/y1S4C07V/meteor-ecommerce)
