@@ -1,0 +1,29 @@
+
+<template name="categories">
+	
+	{{> add_categories}}
+		
+</template>
+
+<template name="add_categories">
+	<form class="add_cat">
+		<input type="text" name="cat_name" placeholder="Add a Category">
+		<button type="submit">Add</button>
+	</form>
+	{{> cat_dropdown}}
+</template>
+
+
+<template name="cat_dropdown">
+	<select class="ui dropdown c_sortdropdown">	 
+	 	{{#each categ}}
+			<option value="{{name}}">{{name}}</option>
+		{{/each}}
+	</select>
+
+
+</template>
+
+
+
+

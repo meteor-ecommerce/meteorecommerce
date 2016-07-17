@@ -1,0 +1,34 @@
+<template name="single_order">
+
+	{{#if Template.subscriptionsReady}}
+		<h4>Order Details</h4>
+		{{#each Products}}
+			<b>Id</b> : {{id}}<br>
+			Price : {{price}}<br>
+			Quantity : {{quantity}}<br>
+		{{/each}}
+
+		<p><b>Status</b>:{{status}} 
+
+
+		<select class="class_status">
+			<option value="">Select Status</option>
+			<option value="0">Pending</option>
+			<option value="1">Approval Pending</option>
+			<option value="2">Payment Pending</option>
+			<option value="3">Processing</option>
+			<option value="4">Dispatch</option>
+			<option value="5">On Hold</option>
+			<option value="6">Delayed</option>
+			<option value="7">Completed</option>
+		
+
+		</select> 
+
+		 <button class="chngStatus">Update Status</button></p>
+
+	{{/if}}
+
+
+
+</template>

@@ -1,0 +1,98 @@
+ <!-- It is also used for the product and the related views, elements and options 
+
+ It shows products => corresponding views => corresponding elements => corresponding otions
+
+ By running in browser you can see how they are working
+ -->
+<template name="products">
+<!--Navigation Bar added-->
+
+
+
+
+<!--This is Important
+	 <h1>This is Queries page</h1>
+	{{#each show_products}}
+		<li style="list-style:none"><a href="/design/{{_id}}" class="p">{{name}}</a></li>
+	{{/each}} -->
+	<br /><br />
+<div class="ui container">
+	<div class="ui grid">
+		<div class="row">
+			<!--Dropdown menu for sorting-->
+			<select class="ui dropdown c_sortdropdown">
+  				 <!-- <option value="0">Default Sorting</option>
+ 				 <option value="1">Sort by popularity</option>-->
+ 				 <option value="rating">Sort by average rating</option>
+ 				 <option value="new">Sort by newness</option>
+ 				 <option value="lth" class="hey">Sort by price:low to high</option>
+ 				 <option value="htl" class="hey">Sort by price:high to low</option>
+ 				 <option value="dlth" class="hey">Sort by discount:low to high</option>
+ 				 <option value="dhtl" class="hey">Sort by discount:high to low</option>
+			</select>
+		</div>
+
+
+			{{> SideBar}}
+			<div class="one wide column"></div>
+
+
+			<div class="twelve wide column">Products
+				<!--Products displayed using cards-->
+
+
+
+	<!--Products grid starts here-->
+				<div class="ui stackable four column grid">
+		  			{{#if Template.subscriptionsReady}}
+		    		{{#each show_products}}
+						<div class="column">
+
+
+		              <div class="ui card">
+		                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		                  <div class="flipper">
+		                    <div class="front" style="background-image:url(http://davidwalsh.name/demo/dwflip.jpg);"></div>
+		                    <div class="back">
+		                      <div class="back-logo" style="background-image:url(http://davidwalsh.name/demo/logo.png)"></div>
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <div class="content">
+		                  <!-- <a class="header">shirt 1</a> -->
+		                  
+		                    {{name}}
+		                  
+		                </div>
+
+		                <div class="extra content">
+		                  <a>
+		                    <i class="users icon"></i>
+		                      Price= {{price}} 
+		                  </a>
+		                  <button class="addCart">Add to cart</button>
+
+		                </div>
+		              </div>
+		            <!-- </div> -->
+		        <!-- </div> -->
+
+		            </div>
+		          {{/each}}
+		          {{else}}
+		          	<h3>loading...</h3>
+		          {{/if}}
+				</div>
+
+				<br/>
+				<button class="load"> Load More .. </button>
+			</div>
+
+
+	</div>
+</div>
+
+	
+</template>
+

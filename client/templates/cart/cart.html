@@ -1,0 +1,49 @@
+<template name="cart">
+  <table class="table">
+   <thead>
+      <tr>
+        
+        <th>Item</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price(per Item)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each shoppingCartItems}}
+        <tr>
+          <td>{{item}}</td>
+          <td>{{description}}</td>
+          <td>{{quantity}}</td>
+          <td>{{price}}</td>
+        </tr>
+      {{/each}}
+      
+    </tbody>
+  </table>
+  <p>
+    <strong>Total : {{total_cart}}</strong>
+  </p>
+  <p>
+    <strong>Items : {{total_quantity}}</strong>
+  </p>
+
+  <!-- {{#if currenUser}} -->
+  <form class="couponForm">
+
+    <p> Apply coupon Here : <input type="text" name="coupon_code" id="coupon_code" ></p>
+
+    <button type="submit"> Apply </button>
+
+
+  </form>
+  <!-- {{else}} -->
+    <p> Please log in to apply coupon code </p>
+  <!-- {{/if}} -->
+
+  <p style="display:none" id="display_price"> Final_Price : {{final_price}} </p>
+
+  <p>
+    <a class="btn btn-default checkout_1">CheckOut</a>
+  </p>
+</template>

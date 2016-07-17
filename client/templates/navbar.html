@@ -1,0 +1,18 @@
+<template name="navbar">
+ 	<a href="{{pathFor route='products'}}"> Home </a>
+ 	<a href="{{pathFor route='cart'}}"> Cart </a>
+ 	{{> loginButtons}}
+  {{#if currentUser}}
+    {{#unless isInRole 'admin'}}
+  <a href="{{pathFor route='account'}}"> My Account </a>
+    {{/unless}}
+  {{/if}}
+  {{#if isInRole 'admin'}}
+  <a href="{{pathFor route='addNewProduct'}}"> Add Product </a>
+  <a href="{{pathFor route='categories'}}"> Add Category </a>
+  <a href="{{pathFor route='coupons'}}"> Add Coupon </a>
+  <a href="{{pathFor route='admin_orders'}}"> Orders </a>
+  <a href="{{pathFor route='admin_control'}}"> All Products and Categories (Edit)</a>
+  <a href="{{pathFor route='search_order'}}"> Search Orders </a>
+  {{/if}}
+</template>

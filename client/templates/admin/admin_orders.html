@@ -1,0 +1,34 @@
+<template name="adminOrders">
+	<h3>Orders</h3>
+	
+
+	{{#each orders}}
+		<p>
+			Id : {{_id}}  Total_amount : {{total_amount}} 
+
+
+
+			Status :{{status}}		
+
+		<select class="c_status">
+			<option value="">Select Status</option>
+			<option value="0">Pending</option>
+			<option value="1">Approval Pending</option>
+			<option value="2">Payment Pending</option>
+			<option value="3">Processing</option>
+			<option value="4">Dispatch</option>
+			<option value="5">On Hold</option>
+			<option value="6">Delayed</option>
+			<option value="7">Completed</option>
+		
+
+		</select> 
+
+		 <button class="changeStatus">Update Status</button>
+		 <button class="details">View Details</button></p>
+	{{/each}}
+
+	<button class="more">Load More</button>
+
+</template>
+

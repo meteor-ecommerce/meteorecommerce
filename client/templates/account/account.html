@@ -1,0 +1,29 @@
+<!-- / /this template is to show all the details of the customer // -->
+
+<template name="account">
+{{#if currentUser}}
+<table class="table">
+   <thead>
+      <tr>
+
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each order_list}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{quantity}}</td>
+          <td>{{price}}</td>
+        </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+  {{else}}
+    {{> products}}
+  {{/if}}
+
+ </template>

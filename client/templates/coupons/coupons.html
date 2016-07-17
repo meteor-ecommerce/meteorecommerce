@@ -1,0 +1,43 @@
+<template name="coupons">
+
+	{{> addCoupons}}
+	
+
+	{{#each coupon}}
+		<li> {{code}}</li>
+		<li> {{valid_till}}</li>
+		<li> {{discount}}</li>
+		<li>{{excluded_categories}}</li>
+		<li>{{usage_count}}</li>
+		<li>{{usage_per_user}}</li>
+		<li>{{usage_coupon}}</li>
+	{{/each}}
+	
+	
+	
+</template>
+
+<template name="addCoupons">
+	<form class="couponsForm">
+		code : <input type="text" name="code" id="code"> <br/>
+		valid till : <input type="date" name="validity" id="validity"> <br/>
+		discount% : <input type="number" name="discount" id="discount"> <br/>
+		exclude categories: {{> categories_dropdown}} <br/>
+		usage_count : <input type="number" name="usage_count" id="usage_count"> <br/>
+		usage_per_user : <input type="number" name="usage_per_user" id="usage_per_user"> <br/>
+		Can be used with other coupons : <input type="checkbox" value="0" id="checkBox"> <br/>
+		<button type="submit">Add Coupon</button>
+		
+	</form>
+	
+</template>
+
+<template name="categories_dropdown">
+	<select class="ui drodown drop">
+		<option>Select</option>
+		{{#each categs}}
+			<option name="{{name}}">{{name}}</option>
+		{{/each}}
+	</select>
+	
+</template>

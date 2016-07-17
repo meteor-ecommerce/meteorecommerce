@@ -1,0 +1,31 @@
+<template name="search_order">
+	<h4> Search here ..... </h4>
+	<div class="searchOrders">
+		 
+		<select class="c_search">
+			<option value="">Search By...</option>
+			<option value="0">Id</option>
+			<option value="1">Status</option>
+			<option value="2">Total_amount</option>
+			<option value="3">Payment Method</option>
+			<option value="4">Payment Id</option>
+			<option value="5">Customer Name</option>
+			<option value="6">Customer Phone No</option>
+			<option value="7">Customer Email</option>
+		
+
+		</select>
+		<input type="text" name="search" placeholder="Enter parameter value... ">
+		<button class="goOrders">Search</button>
+
+	</div>
+
+	<div class="searchResult" style="display:none">
+		<h4>Search Results</h4>
+		{{#if Template.subscriptionsReady}}
+		{{#each searchedOrders}}
+			<li>{{id}}---{{checkoutDetails.name}}----{{total_amount}}--{{checkoutDetails.contact}}--{{checkoutDetails.email}}----{{status}}</li>
+		{{/each}}
+		{{/if}}
+	</div>	
+</template>

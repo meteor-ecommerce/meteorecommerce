@@ -1,0 +1,59 @@
+<template name="adminDashboard">
+	<h3> Orders </h3>
+	<button class="7"> Last 7 Days </button> 
+	<button class="30"> Last 30 Days </button>
+	<button class="month"> This Month </button>
+	<button class="overall"> Overall </button>
+
+
+	<div class="seven"> 
+		{{> lastSevenDaysOrders}}
+	</div>
+	<div class="thirty" style="display:none">
+		{{> lastThirtyDaysOrders}}
+	</div>
+	<div class="mon" style="display:none">
+		{{> thisMonthOrders}}
+	</div>
+	<div class="all" style="display:none">
+		{{> overallOrders}}
+	</div>
+	
+</template>
+
+
+<template name="lastSevenDaysOrders">
+	
+		<p>Revenue : {{total_amount}}</p>
+		<p>Total Order: {{total_order}}</p>
+		<p>Total Products: {{total_products}}</p> 
+		
+	
+</template>
+
+
+<template name="lastThirtyDaysOrders">
+	
+		<p>Revenue : {{total_amount}}</p>
+		<p>Total Order: {{total_order}}</p>
+		<p>Total Products: {{total_products}}</p> 
+		
+	
+</template>
+
+<template name="thisMonthOrders">
+	
+		<p>Revenue : {{total_amount}}</p>
+		<p>Total Order: {{total_order}}</p>
+		<p>Total Products: {{total_products}}</p> 
+		
+	
+</template>
+
+<template name="overallOrders">
+	
+		<p>Revenue : {{total_amount}}</p>
+		<p>Total Order: {{total_order}}</p>
+		<p>Total Products: {{total_products}}</p> 
+			
+</template>

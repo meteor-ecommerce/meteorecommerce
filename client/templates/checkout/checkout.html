@@ -1,0 +1,40 @@
+<template name="checkout">	
+
+
+	
+
+		<form class="checkoutForm">
+			<p> Name : <input type="text" name="name" id="name" required> </p> 
+			<p> Email : <input type="email" name="email" id="email" required> </p> 
+			<p> Contact No. : <input type="number" name="contact_number" id="contact_number" required> </p> 
+			<p> House No. : <input type="number" name="house" id="house"> </p> 
+			<p> Street : <input type="text" name="street" id="street" required> </p> 
+			<p> Landmark : <input type="text" name="landmark" id="landmark" required> </p> 
+			<p> Pin : <input type="number" name="pin" id="pin" required> </p> 
+			<p> City : <input type="text" name="city" id="city" required> </p>
+			<p> State : <input type="text" name="state" id="state" required> </p>
+			<!-- <button type="submit">Save Details</button> -->
+		<!-- </form> -->
+	
+
+	
+	<div class="orderDetails">
+		<h3> Order Summary</h3>
+		<p>Total Amount = {{amount}}</p>
+		<p>Discount : {{final_discount}}</p>
+		<p>Shipping Charges : <b>FREE</b></p>
+		<p>Final Amount : {{final_amount}} </p>
+	</div>
+	<!-- <form class="paymentForm"> -->
+
+		<input type="radio" name="radio" id="COD" value="COD"> Cash On Delivery <br/>
+		<input type="radio" name="radio" id="credit" value="credit"> Credit/Debit Card<br/><br/>
+		<button class="pay">Pay Now</button>
+	</form>
+
+	
+
+
+
+</template>
+

@@ -1,0 +1,44 @@
+<template name="editData">
+
+	
+		
+		<p><button class="product">Product</button>
+		
+		<button class="category">Categories</button></p>
+	
+
+	
+		
+		
+			<div class="prodData">
+				{{> commonProd}}
+			</div>
+			<div class="catData" style="display:none">
+				{{> commonCat}}
+			</div>
+
+		
+			
+
+	
+
+
+	
+</template>
+
+<template name="commonProd">
+	{{#each clickedProd}}
+		<li> <a href="/editProductForm/{{_id}}">{{name}}-------{{_id}}</a><button class="delProd">Delete</button></li> 
+	{{/each}}
+	
+</template>
+
+<template name="commonCat">
+	{{#each clickedCat}}
+		<li> <input type="text" value="{{name}}" id="catEdit"><button class="delCat">Delete</button></li> 
+	{{/each}}
+</template>
+
+
+
+

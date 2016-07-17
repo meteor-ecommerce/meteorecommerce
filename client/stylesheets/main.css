@@ -1,0 +1,117 @@
+/*#owl-demo .item{
+  background: #3fbf79;
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.customNavigation{
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}*/
+/*#owl-demo .item{
+  display: block;
+  padding: 30px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}*/
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px;
+}
+ 
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+}
+ 
+//To move navigation buttons outside use these settings:
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px; 
+  float: left;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
+  float: right;
+}
+
+
+#c_navbar{
+	height:5vh;
+}
+#slider1{
+	height: 15vh;
+}
+#c_main{
+	height: 60vh;
+}
+#slider2{
+	height: 15vh;
+}
+#c_footer{
+	height: 5vh;
+}
+
+
+
+    #owl-demo1 .item{
+      margin: 3px;
+      text-align: center;
+    }
+    #owl-demo1 .item img{
+      display: block;
+      /*width: 100%;
+      height: auto;*/
+      height: 12vh;
+      margin: auto;
+    }
+#owl-demo2 .item{
+      margin: 3px;
+      text-align: center;
+    }
+    #owl-demo2 .item img{
+      display: block;
+      /*width: 100%;
+      height: auto;*/
+      height: 12vh;
+      margin: auto;
+    }
+/*.item{
+  align:center;
+}*/
+/*#content{
+  height: 100vh;
+}*/
+.c_sortdropdown{
+  margin-left: auto;
+  margin-right: 10vw;
+}
+select.ui.dropdown{
+  height: 7vh;
+  width:30vw;
+}
+
+/*.c_pricerange{
+  margin-left: 1vw;
+}*/

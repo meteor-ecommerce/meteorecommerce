@@ -1,0 +1,45 @@
+<template name="SideBar">
+	<div class="three wide column">
+		<h3 class="ui horizontal divider header">Filter</h3>
+
+		<!--Price Range Slider-->
+		<h4 class="ui left floated header">By Price</h4>
+		<br /><br />
+		<div id="price-range-slider"></div>
+		<br />
+
+		<!--Price range min and max values-->
+		<p id="c_pricerange">Price:&#8377;<span id="c_min"></span> - &#8377;<span id="c_max"></span></p>
+
+		<!--Filter by price button-->
+		<button class="ui primary fluid button" id="c_filterbutton">Filter</button>
+		<br />
+
+		<!--divider between filters-->
+		<div class="ui clearing divider"></div>
+
+		<!--Filter By Categories-->
+		<h4 class="ui left floated header">By Categories</h4>
+		<br />
+
+		<form id="checkBoxForm">
+			<br/>
+			{{#each showallcategories}}
+	  		<div class="checkbox category">
+      			<label><input type="checkbox" value="{{name}}" id="categoryBox"><span id="c_uppercase">{{name}}</span></label>
+    		</div>
+    		{{/each}}
+  		</form>
+
+		
+		<!--divider between filters-->
+		<div class="ui clearing divider"></div>
+		
+
+
+
+    
+
+    </div>
+
+</template>	

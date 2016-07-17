@@ -1,0 +1,28 @@
+.ui-widget-header{
+	background: #999999;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background: #777777;
+	border-radius: 99px;
+}
+
+#c_pricerange{
+	text-align: center;
+	font-size: 15px;
+}
+
+.ui.checkbox .box:after, .ui.checkbox label:after{
+	top:-3px;
+}
+.ui.checkbox .box, .ui.checkbox label{
+	position: initial;
+	padding-left: 0;
+}
+.ui.radio.checkbox .box, .ui.radio.checkbox label{
+	padding-left: 0;
+}
+
+
+#c_uppercase{
+	text-transform: uppercase;
+}

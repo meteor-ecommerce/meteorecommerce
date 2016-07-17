@@ -1,0 +1,35 @@
+<template name="editProductForm">
+
+{{#if Template.subscriptionsReady}}
+	<form class="editForm">
+	
+			Name:
+			<input type="text" name="pName" value="{{name1}}" required><br><br>
+			  Slug :
+			<input type="text" name='slug' value="{{slug}}" required><br><br>
+			  Price :
+			<input type="number" name='pPrice' value="{{price}}" step="0.01" required><br><br>
+		 	  Sale Price :
+			<input type="number" name='salePrice' value="{{salePrice}}" step="0.01" required><br><br>
+			  Cost Price:
+			<input type="number" name='costPrice' value="{{costPrice}}" step="0.01" required><br><br>
+			Short Description:
+			<input type="textarea" name='shortDescription' value="{{shortDescription}}" required><br><br>
+			  Long Description :
+			<input type="textarea" name='longDescription' value="{{longDescription}}" required><br><br>
+			 Stock :
+			<input type="number" name='stock' value="{{stock}}" required><br><br>
+
+		Categories :
+		 <ul class="catCheck">
+		 	{{#each cats}}
+		 		<li><input type="checkbox" value="{{name}}" checked={{#if exists name}}checked{{/if}}> {{name}}</li>
+		 	{{/each}}
+		 </ul>
+			
+		  
+		<button type="submit">Update</button>
+		
+	</form>
+{{/if}}
+</template>

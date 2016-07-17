@@ -1,0 +1,27 @@
+<template name="addNewProduct">
+	<form class="newProductForm">
+			  Name:
+			<input type="text" name="pName" required><br><br>
+			  Slug :
+			<input type="text" name='slug' required><br><br>
+			  Price :
+			<input type="number" name='pPrice' step="0.01" required><br><br>
+		 	  Sale Price :
+			<input type="number" name='salePrice' step="0.01" required><br><br>
+			  Cost Price:
+			<input type="number" name='costPrice' step="0.01" required><br><br>
+			Short Description:
+			<input type="textarea" name='shortDescription' required><br><br>
+			  Long Description :
+			<input type="textarea" name='longDescription' required><br><br>
+			 Stock :
+			<input type="number" name='stock' required><br><br>
+
+			Categories :
+			{{> cat_dropdown}}<br><br>
+		  
+		<button type="submit">Add Product</button>
+	</form>
+
+	
+</template>
