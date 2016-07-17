@@ -12,7 +12,7 @@ Support this project : [Donate] (http://imojo.in/bv12it)
 
 
 ##Features
-1. Product listing page with sorting and silter options
+1. Product listing page with sorting and filter options
 2. Categories for Products
 3. Admin Panel to add,edit product and categories and see the orders
 4. Inbuilt integration for [Instamojo](https://imjo.in/NvQhd) Payment Gateway along with Cash on Delivery
