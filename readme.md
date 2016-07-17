@@ -1,5 +1,7 @@
 # meteor-ecommerce
 
+###Current version 0.1b
+
 Support this project : [Donate] (http://imojo.in/bv12it)
 
 ##Startup Guide
