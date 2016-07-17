@@ -1,5 +1,7 @@
 # meteor-ecommerce
 
+Support this project : [Donate] (http://imojo.in/bv12it)
+
 ##Startup Guide
 1. Install Meteor
 2. Run meteor in the app directory
