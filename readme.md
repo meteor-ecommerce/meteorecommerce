@@ -2,8 +2,7 @@
 
 ###Current version 0.1b
 
-Support this project : [Donate in INR] (http://imojo.in/bv12it)  OR in USD
- [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2TSXNFSNJGF5G)
+Support this project : [Donate] (http://imojo.in/bv12it)
 
 ##Startup Guide
 1. Install Meteor
