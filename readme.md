@@ -6,8 +6,8 @@ Support this project : [Donate] (http://imojo.in/bv12it)
 
 ##Startup Guide
 1. Install Meteor
-2. Run meteor in the app directory
-3. On starting, the admin email and password will be displayed in the console. Use this to gain admin access to the site
+2. Run 'meteor' in the app directory
+3. On starting, the admin email and password will be displayed in the console. Use this to gain admin access to the site. These credentials will be re-generated everytime, the meteor server restarts.
 
 
 
