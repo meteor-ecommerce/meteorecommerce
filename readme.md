@@ -1,5 +1,5 @@
 # meteor-ecommerce
-# This project is out-dated and no longer maintained. If you to contribute/maintain please raise an issue.
+# This project is out-dated and no longer maintained. If you wish to contribute/maintain please raise an issue.
 
 ### Current version 0.1b
 
